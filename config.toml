@@ -2,3 +2,14 @@ baseURL = 'https://rikaaa0928.github.io/'
 languageCode = 'en-us'
 title = 'Rikaaa0928'
 theme = 'PaperMod'
+[params]
+env="production"
+[params.profileMode]
+enabled = true
+title = 'Miracles and Magic Are Charged'
+[[params.profileMode.buttons]] 
+name = "Blogs"
+url = "/posts"
+[[params.profileMode.buttons]] 
+name = "Github"
+url = "https://github.com/rikaaa0928"
