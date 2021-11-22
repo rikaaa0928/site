@@ -1,5 +1,5 @@
 ---
-title: "Dubbo 2.7.13 With Java 17"
+title: "Dubbo 2.7.14 With Java 17"
 date: 2021-11-22T15:37:08+08:00
 draft: false
 ---
@@ -13,7 +13,7 @@ java 17是java目前最新的长期支持(LTS)版本，但是由于其强封装 
 首先使用java 17作为我们的开发环境，通过  
 ```
 git clone git@github.com:apache/dubbo.git
-git checkout dubbo-2.7.13
+git checkout dubbo-2.7.14
 cd dubbo-demo/dubbo-demo-annotation
 ```  
 获得dubbo官方仓库的代码中的demo，然后可以尝试直接使用java 17编译dubbo的demo  
@@ -23,7 +23,7 @@ mvn -U  clean package --no-transfer-progress -D maven.test.skip=true
 启动zookeeper `docker run --name some-zookeepep -p 2181:2181 -it --rm zookeeper` 作为注册中心 
 尝试运行provider
 ```
-java -jar dubbo-demo-annotation-provider/target/dubbo-demo-annotation-provider-2.7.13.jar
+java -jar dubbo-demo-annotation-provider/target/dubbo-demo-annotation-provider-2.7.14.jar
 ```
 可以看到类似的报错:  
 ```Caused by: java.lang.reflect.InaccessibleObjectException: Unable to make protected final java.lang.Class java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain) throws java.lang.ClassFormatError accessible: module java.base does not "opens java.lang" to unnamed module @8807e25```  
@@ -35,10 +35,10 @@ java -jar dubbo-demo-annotation-provider/target/dubbo-demo-annotation-provider-2
 如上参数即可运行  
 在两个终端中分别运行provider和consumer:  
 ```
-java --add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/sun.reflect.generics.reflectiveObjects=ALL-UNNAMED --add-opens java.base/java.math=ALL-UNNAMED -jar dubbo-demo-annotation-provider/target/dubbo-demo-annotation-provider-2.7.13.jar
+java --add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/sun.reflect.generics.reflectiveObjects=ALL-UNNAMED --add-opens java.base/java.math=ALL-UNNAMED -jar dubbo-demo-annotation-provider/target/dubbo-demo-annotation-provider-2.7.14.jar
 ```
 ```
-java --add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/sun.reflect.generics.reflectiveObjects=ALL-UNNAMED --add-opens java.base/java.math=ALL-UNNAMED -jar dubbo-demo-annotation-consumer/target/dubbo-demo-annotation-consumer-2.7.13.jar
+java --add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/sun.reflect.generics.reflectiveObjects=ALL-UNNAMED --add-opens java.base/java.math=ALL-UNNAMED -jar dubbo-demo-annotation-consumer/target/dubbo-demo-annotation-consumer-2.7.14.jar
 ```
 可以发现报出了zookeeper的错误，不难想到，升级依赖的zookeeper的版本大概率可以解决问题...  
 在provider和consumer的 `pom.xml` 的依赖第一项添加最新版本的zookeeper依赖:  
