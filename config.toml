@@ -1,6 +1,6 @@
 baseURL = 'https://rikaaa0928.github.io/'
 languageCode = 'en-us'
-title = 'Rikaaa0928'
+title = 'rikaaa0928 の blog'
 theme = 'PaperMod'
 [params]
 env="production"
