@@ -14,7 +14,7 @@ java 17是java目前最新的长期支持(LTS)版本，但是由于其强封装 
 我们以dubbo官方仓库中的demo为例
 首先使用java 17作为我们的开发环境，通过  
 ```
-git@github.com:apache/dubbo.git
+git clone git@github.com:apache/dubbo.git
 git checkout dubbo-2.7.13
 cd dubbo-demo/dubbo-demo-annotation
 ```  
