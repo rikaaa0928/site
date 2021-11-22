@@ -34,7 +34,7 @@ java -jar dubbo-demo-annotation-provider/target/dubbo-demo-annotation-provider-2
 ```
 --add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/sun.reflect.generics.reflectiveObjects=ALL-UNNAMED --add-opens java.base/java.math=ALL-UNNAMED
 ```  
-如上参数即可运行
+如上参数即可运行  
 在两个终端中分别运行provider和consumer:  
 ```
 java --add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/sun.reflect.generics.reflectiveObjects=ALL-UNNAMED --add-opens java.base/java.math=ALL-UNNAMED -jar dubbo-demo-annotation-provider/target/dubbo-demo-annotation-provider-2.7.13.jar
