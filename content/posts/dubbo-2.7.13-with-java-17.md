@@ -2,6 +2,9 @@
 title: "Dubbo 2.7.14 With Java 17"
 date: 2021-11-22T15:37:08+08:00
 draft: false
+tags: ["dubbo", "java 17"]
+author: ["rikaaa0928"]
+categories : ["code"]
 ---
 java 17是java目前最新的长期支持(LTS)版本，但是由于其强封装 JDK 的内部 API的新特性，导致dubbo项目无法直接使用jdk17编译运行。通过参考[openjdk的说明](https://openjdk.java.net/jeps/403)，可以发现只需要添加相应参数即可绕开java 17的限制  
 对于普通的dubbo项目，只需要在运行时添加  

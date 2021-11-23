@@ -32,3 +32,4 @@ jobs:
           deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
           external_repository: rikaaa0928/rikaaa0928.github.io
           publish_branch: master
+          keep_files: true
