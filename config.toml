@@ -1,6 +1,6 @@
 baseURL = 'https://rikaaa0928.github.io/'
 languageCode = 'zh-cn'
-title = 'rikaaa0928 の blog'
+title = '便利屋68 の home page'
 theme = 'PaperMod'
 [params]
 env="production"
