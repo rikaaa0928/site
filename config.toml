@@ -6,7 +6,7 @@ theme = 'PaperMod'
 env="production"
 [params.profileMode]
 enabled = true
-title = '一 日 一 恶'
+title = '一 日 一 惡'
 [[params.profileMode.buttons]] 
 name = "Archives"
 url = "/archives"
