@@ -39,3 +39,6 @@ identifier = "Search"
 name = "Search"
 url = "/search/"
 weight = 30
+[services]
+[services.googleAnalytics]
+ID = 'G-29G2H55T5Z'
