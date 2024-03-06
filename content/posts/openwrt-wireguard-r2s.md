@@ -11,6 +11,7 @@ categories : ["memo"]
 | 家 | 国内 | 国外 |
 | --- | --- | --- |
 | r2s (wireguard+udptunnel smartdns) -> ax9000 -> 光猫) | vps (bind dnscrypt-proxy）| vps (caddy wireguard+udptunnel) |  
+
 整套方案的方针是
 1. 减少复杂度，任何情况下不要影响任何不参与其中的设备，因为家里还有其他人用。所以采用旁网关的方式  
 2. 尽量采用由可信的第一方直接提供的技术/组件。作者跑路，团队内讧导致使用的版本无人维护，经常出现破坏性变动，作者夹带私货等现象实在是太多了，所以采用wireguard作为vpn方案，其他xray v2ray/v2fly trojan ss ssr之类的通通pass...搞出这么多东西来就足以说明了由多不靠谱  
