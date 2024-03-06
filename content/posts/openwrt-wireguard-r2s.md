@@ -10,7 +10,7 @@ categories : ["memo"]
 
 | 家 | 国内 | 国外 |
 | --- | --- | --- |
-| r2s (wireguard+udptunnel smartdns) -> ax9000 -> 光猫) | vps (bind dnscrypt-proxy）| vps (caddy wireguard+udptunnel) |  
+| r2s ( wireguard + udptunnel smartdns) $\rightarrow$ ax9000 $\rightarrow$ 光猫) | vps ( bind dnscrypt-proxy ）| vps ( caddy wireguard + udptunnel ) |  
 
 整套方案的方针是
 1. 减少复杂度，任何情况下不要影响任何不参与其中的设备，因为家里还有其他人用。所以采用旁网关的方式  
