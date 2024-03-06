@@ -2,7 +2,7 @@
 title: "Openwrt+Wireguard+udptunnel+DoH旁网关（旁路由）方案记录"
 date: 2024-01-25T18:06:41+08:00
 draft: false
-tags: ["network", "openwrt","wireguard","r2s","小米路由器","旁网关"，"DoH", "udptunnel"]
+tags: ["network", "openwrt","wireguard","r2s","小米路由器","旁网关", "DoH", "udptunnel"]
 author: ["rikaaa0928"]
 categories : ["memo"]
 ---
