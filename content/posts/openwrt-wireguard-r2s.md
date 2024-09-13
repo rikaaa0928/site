@@ -31,4 +31,3 @@ ax9000使用国内vps提供的dns（非必要）
 ### 设备准备
 1. r2s vps买好  
 2. r2s刷[官方openwrt](https://wiki.friendlyelec.com/wiki/index.php/NanoPi_R2S/zh#.E4.B8.8B.E8.BD.BD.E5.9B.BA.E4.BB.B6)(后来才知道openwrt官网也有下载，早知道的话我会选择openwrt官网的版本)，23.05的版本换掉了iptable，为了求稳，装的21.02版本  
-3. 配置wireguard
